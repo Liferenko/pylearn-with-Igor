@@ -1,5 +1,11 @@
 # coding: utf-8
 """
+прочитать JSON.load и .loads
+
+15 ноября - подготовить методы использования FB Api
+
+
+
 найти функции и запросы, которые нужны нам для использования от Фейсбука. Какие запросы фб должен получить для выполнения операции.
 прочитать что такое requests - http://docs.python-requests.org/en/master/
 
@@ -24,7 +30,7 @@ ad.remote_create(params={
 })
 """
 
-# import requests
+import requests
 from facebookads.api import FacebookAdsApi
 from facebookads import objects
 

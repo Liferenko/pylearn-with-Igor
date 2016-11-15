@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{index_content}}
+<a href="https://www.facebook.com/{{params['fb_api_version']}}/dialog/oauth?
+client_id={{params['client_id']}}
+&redirect_uri={{params['redirect_uri']}}
+&scope=ads_management">Auth</a>
+
+{% endblock %}
