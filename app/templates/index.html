@@ -7,4 +7,10 @@ client_id={{params['client_id']}}
 &redirect_uri={{params['redirect_uri']}}
 &scope=ads_management">Auth</a>
 
+<p>{{result}}</p>
+<hr>
+<div class="col-md-12">
+    <h3 class="warning">{{access_token}}</h3>
+</div>
+
 {% endblock %}
