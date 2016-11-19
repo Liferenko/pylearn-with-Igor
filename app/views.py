@@ -24,11 +24,12 @@ def index():
         raw_FBAccessToken_to_JSON = json.loads(raw_FBAccessToken)
         access_token = raw_FBAccessToken_to_JSON['access_token']
         print(access_token)
+    else:
+        print('Что-то пошло не так в user_code')
 
 
 
     return render_template('index.html',
                            title='FacebookAds',
                            index_content='Facebook567',
-                           params=params,
-                           access_token='access_token' )
+                           params=params)
